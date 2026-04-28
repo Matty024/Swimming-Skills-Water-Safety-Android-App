@@ -1,18 +1,13 @@
 package com.example.capstoneprojectswimmingapp
 
+import android.os.Build
+import androidx.annotation.RequiresApi
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
-
-import android.os.Build
-import android.util.Log
-import androidx.annotation.RequiresApi
 import java.time.DayOfWeek
-
-
 import java.time.LocalDate
-
 
 
 // Creating an object class used for storing user information (mutableStateOf() is used to automatically update the variable if there are any changes to the value):

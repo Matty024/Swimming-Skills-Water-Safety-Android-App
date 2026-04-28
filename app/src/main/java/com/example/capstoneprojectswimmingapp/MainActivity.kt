@@ -73,7 +73,7 @@ class MainActivity : ComponentActivity() { // defining the main activity (this i
 fun MainApp(){
     val navController = rememberNavController() // calling the navController so that the pages can be loaded up
 
-    WelcomeScreen(navController = navController) // Loading a preview of the app to see how the design is looking without having to run an emulator.
+    ProfilePage(navController = navController) // Loading a preview of the app to see how the design is looking without having to run an emulator.
 
 }
 

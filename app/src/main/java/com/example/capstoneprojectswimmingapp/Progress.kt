@@ -306,36 +306,37 @@ object ProgressState {
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-    // Overall progress through all the levels:
+    // Overall progress through all the levels / progress though each level:
 
-    //
+    //  creating a function to find out how may exercises are completed in each level
     fun currentLevelCompletedExercises(level: Int): Int {
+        // when statement gose through the list below in order:
         return when (level) {
-            1 -> level1CompletedExercises
-            2 -> level2CompletedExercises
-            3 -> level3CompletedExercises
-            4 -> level4CompletedExercises
-            5 -> level5CompletedExercises
+            1 -> level1CompletedExercises // how may exercises are completed in level 1
+            2 -> level2CompletedExercises // how may exercises are completed in level 2
+            3 -> level3CompletedExercises // how may exercises are completed in level 3
+            4 -> level4CompletedExercises // how may exercises are completed in level 4
+            5 -> level5CompletedExercises // how may exercises are completed in level 5
             else -> 0
         }
     }
 
-    //
+    // creating a function to find the total number of exercises in each level:
     fun currentLevelTotalExercises(level: Int): Int {
         return when (level) {
-            1 -> level1TotalExercises
-            2 -> level2TotalExercises
-            3 -> level3TotalExercises
-            4 -> level4TotalExercises
-            5 -> level5TotalExercises
+            1 -> level1TotalExercises // how may exercises are there in level 1
+            2 -> level2TotalExercises // how may exercises are there in level 2
+            3 -> level3TotalExercises // how may exercises are there in level 3
+            4 -> level4TotalExercises // how may exercises are there in level 4
+            5 -> level5TotalExercises // how may exercises are there in level 5
             else -> 0
         }
     }
 
-    //
+    // function to show the number (as a %) of completed exercises in each level:
     fun currentLevelProgressPercent(level: Int): Int {
         return when (level) {
-            1 -> level1ProgressPercent
+            1 -> level1ProgressPercent // number of completed exercises as a % for level 1
             2 -> level2ProgressPercent
             3 -> level3ProgressPercent
             4 -> level4ProgressPercent
@@ -344,35 +345,31 @@ object ProgressState {
         }
     }
 
-    //
+    // creating a function to find the out how may exercise have been completed over different levels:
     fun overallCompletedExercises(startingLevel: Int): Int {
         return when (startingLevel) {
-            1 -> level1CompletedExercises + level2CompletedExercises + level3CompletedExercises + level4CompletedExercises + level5CompletedExercises
-            2 -> level2CompletedExercises + level3CompletedExercises + level4CompletedExercises + level5CompletedExercises
-            3 -> level3CompletedExercises + level4CompletedExercises + level5CompletedExercises
-            4 -> level4CompletedExercises + level5CompletedExercises
-            5 -> level5CompletedExercises
+            1 -> level1CompletedExercises + level2CompletedExercises + level3CompletedExercises + level4CompletedExercises + level5CompletedExercises // finding the number of competed exercises if the uer starts at level 1.
+            2 -> level2CompletedExercises + level3CompletedExercises + level4CompletedExercises + level5CompletedExercises // finding the number of competed exercises if the uer starts at level 2.
+            3 -> level3CompletedExercises + level4CompletedExercises + level5CompletedExercises // finding the number of competed exercises if the uer starts at level 3.
             else -> 0
         }
     }
 
-    //
+    // finding the total number of exercises overall, depending on the users starting level:
     fun overallTotalExercises(startingLevel: Int): Int {
         return when (startingLevel) {
-            1 -> level1TotalExercises + level2TotalExercises + level3TotalExercises + level4TotalExercises + level5TotalExercises
-            2 -> level2TotalExercises + level3TotalExercises + level4TotalExercises + level5TotalExercises
-            3 -> level3TotalExercises + level4TotalExercises + level5TotalExercises
-            4 -> level4TotalExercises + level5TotalExercises
-            5 -> level5TotalExercises
+            1 -> level1TotalExercises + level2TotalExercises + level3TotalExercises + level4TotalExercises + level5TotalExercises // finding the total if users start at level 1
+            2 -> level2TotalExercises + level3TotalExercises + level4TotalExercises + level5TotalExercises // finding the total if users start at level 2
+            3 -> level3TotalExercises + level4TotalExercises + level5TotalExercises // finding the total if users start at level 3
             else -> 0
         }
     }
 
-    //
+    // function to work out the users overall %:
     fun overallProgressPercent(startingLevel: Int): Int {
-        val completed = overallCompletedExercises(startingLevel)
-        val total = overallTotalExercises(startingLevel)
-        return if (total > 0) (completed * 100) / total else 0
+        val completed = overallCompletedExercises(startingLevel) // creating a value called completed and defining it as the number of completed exercises.
+        val total = overallTotalExercises(startingLevel) // creating a value called total and defining it as the overall number of exercises
+        return if (total > 0) (completed * 100) / total else 0 // working out the percentage by timesing the total and the competed values then dividing it by the total value to get the %.
     }
 
 
