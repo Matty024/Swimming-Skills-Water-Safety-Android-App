@@ -31,7 +31,15 @@ The application was designed as an academic prototype rather than a replacement 
 ### Screenshots:
 Onboarding page - First time opening the app, where users can select their starting level and preferences:
 
+ <img width="473" height="947" alt="Screenshot 2026-04-24 155445" src="https://github.com/user-attachments/assets/fd4c3fdd-604d-4509-a626-602ddc6e333e" />
+
+<img width="627" height="906" alt="Screenshot 2026-08-19 164758" src="https://github.com/user-attachments/assets/f70d5a8a-3999-4810-86da-f5d67254fbef" />
+
+<img width="598" height="940" alt="Screenshot 2026-08-19 164822" src="https://github.com/user-attachments/assets/740095ed-2aa5-4fb4-9949-185d9bf5cced" />
+
+
 Home page - Weekly calendar showing a scheduled lessons:
+
 <img width="490" height="960" alt="Screenshot 2026-04-24 160229" src="https://github.com/user-attachments/assets/a491ecc4-9b17-4173-9562-68a310cf9d5a" />
 
 Lesson page - Showing a lesson and the exercises in that lesson:
