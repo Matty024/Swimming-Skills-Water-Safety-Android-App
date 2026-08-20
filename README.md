@@ -6,7 +6,6 @@ An Android Application designed and developed to support swim skilled developmen
 This project was developed as my final year Capstone Project for my BSc (Hons) Computing (Application Software Development) degree at Robert Gordan's University. 
 
 
-
 ### About the project:
 The goal of this project was to Design and Evaluate a Mobile Application to Support Swim Skills Development and Water Safety Awareness through the use of structured learning and progress tracking.
 
@@ -16,6 +15,7 @@ Research -> Requirement gathering -> Design -> Development -> Testing -> Evaluat
 The app was developed over approximately 4 week using Android Studios, Kotlin, Jetpack Compose, based on the research, requirements, and design work done earlier in the project.
 
 The application was designed as an academic prototype rather than a replacement for traditional swim teaching methods
+
 
 ### Features: 
 - Structured Swimming Lessons - Lessons are organised across five progressive swimming levels.
@@ -27,6 +27,7 @@ The application was designed as an academic prototype rather than a replacement 
 - Additional lessons - Extra lessons can be added to the user's calendar.
 - Custom Lessons - User's cam create their own lessons and exercises.
 -  Accessible Navigation - A consistent navigation system allowing for users to move between the different pages in the app
+
 
 ### Screenshots:
 Onboarding page - First time opening the app, where users can select their starting level and preferences:
@@ -54,13 +55,34 @@ Progress - Showing the users progress for the level their in and their overall p
 - Kotlin
 - Jetpack Compose
 - Android Studio
+- Miro
+- Lucid chart
 
 
 ### Technical implementation: 
+Navigation:
+Navigation was implemented using Jetpack Compose Navigation and NavController, providing navigation between the different pages in the app. 
+
+Reusable Components:
+Reusable components were created for elements such as the lessons headers, exercise cards, and the bottom navigation bar to streamlined the code and to reduce filler code. 
+
+Lesson Scheduling:
+A Scheduling system was used to determine the user's first lesson date from their scheduled lesson day and then progressing through the structured lessons week by week.
+
+Progress Tracking:
+User progress was tracked via the exercise cards with the cards containing a check box used to calculate the progress for the individual swimming level and the overall progress
+
+Modular Structure:
+The Applications code was separated across several KT files to make the code easer to maintain and to troubleshoot.
+
 
 ### Testing:
 
-Challenges / Solutions: 
+
+
+
+
+### Challenges / Solutions: 
 
 ### What I Learned:
 
