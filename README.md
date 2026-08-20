@@ -94,16 +94,19 @@ Usability testing was conducted with 3 users with different experience levels, w
 
 ### Challenges and Solutions: 
 1) Weekly lesson scheduling
+
 Challenge: Users first lesson needs to appear on their selected day and automatically progress to the next lesson each week.
    
 Solution: Created scheduling logic that compares the user's selected lesson day against their onboarding date this fides the first matching lesson date and then progresses through the lesson sequence on the following lesson date.
    
 2) Progress calculation
+
 Challenge: Users overall progress included earlier levels when a users started in a higher level.
    
 Solution: Updated the progress calculation to account for the users starting level, removing levels earlier levels that the user never did when calculation the user progress.
    
 3) Striction of content
+   
 Challenge: All the content/code for the application was in 1 kt file making it hared to troubleshoot and to manage all the code.
    
 Solution: Separated the content into different kt files and used imports to call the different files together allowing for navigation and the reusable sections to work correctly.
